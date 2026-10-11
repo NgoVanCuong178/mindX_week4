@@ -1,0 +1,14 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Phiếu chuyển yêu cầu tính năng cho Product
+
+Mã yêu cầu:        FR-112 (Product backlog)
+Ticket gốc:        #<số ticket>
+Người đề xuất:     CXO Cơ sở Nguyễn Chí Thanh
+Tiêu đề:           Tự động tạo báo cáo tiến độ học viên (PDF) và gửi email phụ huynh hàng tuần
+Vấn đề cần giải:   CXO/giáo viên mất nhiều thời gian tổng hợp và gửi tiến độ cho phụ huynh thủ công
+Nội dung báo cáo:  điểm danh, tình trạng nộp bài, điểm, nhận xét giáo viên
+Quy mô:            ~120 học viên / cơ sở; gửi 1 lần / tuần
+Yêu cầu tương tự:  Cơ sở Hà Đông, Cơ sở Quận 10 (3 tháng gần nhất)
+Hiện trạng:        LMS chỉ xuất Excel theo lớp, không lưu email phụ huynh, không gửi tự động
+Workaround:        xuất Excel hàng tuần + mail merge
+Lưu ý cho Product: dữ liệu phụ huynh là dữ liệu cá nhân -> cần xem xét quyền riêng tư / đồng ý của phụ huynh

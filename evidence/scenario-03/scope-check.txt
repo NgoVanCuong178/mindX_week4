@@ -1,0 +1,11 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Kiểm tra phạm vi ảnh hưởng (09:05)
+
+WEB102-HN      20 học viên   nộp bài thi: LỖI
+DATA101-SG     18 học viên   nộp bài thi: LỖI
+MOBILE201-HN   15 học viên   nộp bài thi: LỖI
+Lớp khác có bài thi hôm nay: LỖI (tỷ lệ lỗi 100% trên toàn bộ POST /api/exams/submit)
+Xem bài học / đăng nhập: bình thường
+
+Tổng: 53+ học viên ở nhiều lớp, nhiều cơ sở -> TOÀN HỆ THỐNG (chức năng nộp bài thi)
+Ticket liên quan đến từ giáo viên các lớp DATA101-SG và MOBILE201-HN.

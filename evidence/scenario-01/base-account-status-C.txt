@@ -1,0 +1,7 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Base system - Account lookup
+User:            le.van.c@example.com
+Account status:  DEACTIVATED (2 tuần trước)
+HR status:       Đã nghỉ việc (HR xác nhận qua Teams)
+Email match:     Yes
+Login log:       4 lần FAILED sáng nay, không có lỗi hàng loạt ở user khác

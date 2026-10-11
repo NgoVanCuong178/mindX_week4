@@ -1,0 +1,7 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Base system - Account lookup
+User:            tran.thi.b@example.com
+Account status:  ACTIVE
+HR status:       Đang làm việc
+Email match:     Yes
+Last updated:    2 tuần trước

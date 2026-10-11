@@ -1,0 +1,11 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Monitoring - Video endpoint / CDN (19:00 - 20:10)
+
+Video endpoint - error rate tổng:      0.4% (bình thường, không tăng)
+Video endpoint - response time p95:    420 ms (bình thường)
+CDN 5xx (502/504):                     không tăng
+CDN 4xx theo asset:
+  vid_js_adv_l3_7781 (Lesson 3)        100% 403 từ 19:38
+  các asset khác                        < 0.5%
+
+Nhận định: không có dấu hiệu sự cố hệ thống/CDN (loại Branch B). Lỗi tập trung ở 1 asset.

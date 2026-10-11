@@ -1,0 +1,10 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+LMS (Denise) - Application log (trích đoạn)
+
+14:03:12 WARN  SlowQuery 18.2s  SELECT * FROM submissions WHERE class_id='WEB101-HN-2024' ...
+14:06:47 ERROR TimeoutException  POST /api/assignments/submit  (30s)  user=student_web101_07
+14:07:02 WARN  SlowQuery 24.9s  SELECT * FROM submissions WHERE class_id='WEB101-HN-2024' ...
+14:09:31 ERROR TimeoutException  GET /api/classes/WEB101-HN-2024  (30s)  user=student_web101_12
+14:11:15 WARN  DB connection pool usage 46/50
+14:12:40 ERROR TimeoutException  POST /api/assignments/submit  (30s)  user=student_web101_03
+14:14:58 WARN  DB connection pool usage 49/50

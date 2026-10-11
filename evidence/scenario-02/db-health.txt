@@ -1,0 +1,7 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Database health - LMS (Denise)
+
+Connection pool:   49/50 (gần đầy)
+Long-running queries (> 10s): 7, đều trên bảng submissions, lọc theo class_id='WEB101-HN-2024'
+CPU database:      85%
+Ghi chú: query chậm bắt đầu từ ~14:00, trùng thời điểm lớp WEB101-HN-2024 mở bài tập tuần.

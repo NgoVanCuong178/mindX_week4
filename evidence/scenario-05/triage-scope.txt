@@ -1,0 +1,12 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Triage phạm vi - Video không phát (khoá Advanced JavaScript)
+
+Ticket nhận trong 20 phút: 3 (CXO, giáo viên, học viên) - cùng lớp JS-ADV-HN-2412, cùng Lesson 3
+Người dùng bị ảnh hưởng: 12 học viên (8 web Chrome 120+, 4 mobile iOS Safari / Android Chrome)
+Bắt đầu: ~19:40
+
+1 lớp hay nhiều lớp?   Chỉ JS-ADV-HN-2412 báo lỗi (lớp duy nhất đang học Lesson 3 tối nay).
+                       Tài khoản test ở lớp khác mở Lesson 3 cũng lỗi -> lỗi theo bài, không theo lớp.
+1 video hay toàn bộ?   Chỉ video Lesson 3. Lesson 1, 2, 4 và video khoá khác phát bình thường.
+Web hay cả mobile?     Cả web và mobile đều lỗi.
+Phía người dùng?       Đổi 4G vẫn lỗi; Incognito vẫn lỗi; nhiều thiết bị/mạng khác nhau -> KHÔNG phải user-side.

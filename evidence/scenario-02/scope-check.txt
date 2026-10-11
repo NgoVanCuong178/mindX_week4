@@ -1,0 +1,10 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Kiểm tra phạm vi ảnh hưởng (14:20)
+
+WEB101-HN-2024   avg response 35 s   -> BỊ ẢNH HƯỞNG (15 học viên)
+WEB102-HN-2024   avg response 2.1 s  -> bình thường
+DATA101-SG-2024  avg response 1.8 s  -> bình thường
+Trang chủ LMS    avg response 1.9 s  -> bình thường
+
+Kết luận: ảnh hưởng cục bộ 1 lớp, không phải toàn hệ thống.
+Không có ticket tương tự từ lớp khác trong 1 giờ qua.

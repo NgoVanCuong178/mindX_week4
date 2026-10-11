@@ -1,0 +1,16 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Azure App Insights - LMS (Denise) - Exam submission service
+Khoảng thời gian: 08:00 - 09:05
+
+Exceptions / 5 phút:
+08:00 - 08:25    2 - 4      (bình thường)
+08:30          186   <- bắt đầu tăng đột biến
+08:45          412
+09:00          455
+
+Failed requests POST /api/exams/submit:
+  trước 08:30: 0.1%
+  từ 08:30:  100%  (HTTP 500 "System error - please contact administrator")
+
+Top exception: Npgsql.NpgsqlException: Failed to connect to database (connection timeout)
+Dependency "lms-db": failed calls 100% từ 08:30

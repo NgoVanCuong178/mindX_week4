@@ -1,0 +1,21 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Đánh giá khả thi - Báo cáo tuyển sinh cho Director (hạn 09:00 15/10/2026)
+
+Nguồn dữ liệu:
+  Enrollment (đăng ký)   CRM tuyển sinh -> BI warehouse (cập nhật hằng đêm)   Support có quyền đọc   -> KHẢ THI
+  Completion (hoàn thành) LMS (Denise)                                         Support có quyền đọc   -> KHẢ THI, cần thêm ~3 giờ ghép dữ liệu
+  Revenue (doanh thu)    Hệ thống Finance                                      KHÔNG có quyền         -> cần Finance duyệt, RỦI RO
+
+Định nghĩa metric đề xuất (cần Director xác nhận):
+  Học viên đăng ký mới = học viên đã thanh toán đợt 1 trong tháng, không tính bảo lưu/chuyển lớp;
+  đếm theo khoá (1 học viên học 2 khoá = 2 lượt).
+
+Rủi ro:
+  PII        - báo cáo chỉ dùng số tổng hợp, không xuất tên/SĐT/email học viên
+  Query nặng - 9 tháng x 3 cơ sở: chạy trên read replica của BI, ngoài giờ cao điểm
+  Metric     - "tuyển sinh" có thể hiểu là lead / đăng ký / đã thanh toán -> chốt định nghĩa với Director
+
+Ước lượng công sức:
+  MVP (enrollment theo cơ sở x chương trình x tháng, breakdown khoá)   ~4 giờ
+  + Tỷ lệ hoàn thành                                                   ~3 giờ
+  + Doanh thu                                                          ~2 giờ, phụ thuộc Finance duyệt

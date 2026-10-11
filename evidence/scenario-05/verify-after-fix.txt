@@ -1,0 +1,10 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Kiểm tra sau khi Content Ops tạo lại signed URL cho vid_js_adv_l3_7781
+
+Monitoring: 403 của asset vid_js_adv_l3_7781 về 0% sau khi cập nhật
+Tự test:
+  Web Chrome (tài khoản test)        phát bình thường
+  Mobile Android Chrome (test)       phát bình thường
+Verify với user mẫu (qua giáo viên):
+  student_jsadv_03 (web, wifi)       phát bình thường
+  student_jsadv_09 (iOS Safari, 4G)  phát bình thường

@@ -1,0 +1,12 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Đề xuất phê duyệt trích xuất dữ liệu - gửi Quản lý trực tiếp
+
+Ticket:          #<số ticket>
+Người yêu cầu:   Director Trần Quang H - báo cáo cho cuộc họp 09:00 15/10/2026
+Dữ liệu trích xuất:
+  - Enrollment: số học viên đăng ký mới, 01/2026 - 09/2026, 3 cơ sở, 3 chương trình, theo khoá
+  - Completion: tỷ lệ hoàn thành theo khoá (nice-to-have)
+  - Revenue: tổng doanh thu theo cơ sở x chương trình (nice-to-have, cần Finance duyệt riêng)
+Thông tin nhạy cảm: KHÔNG trích xuất PII (tên, SĐT, email, địa chỉ học viên/phụ huynh); chỉ số tổng hợp.
+Cách thực hiện: query read replica BI, ngoài giờ cao điểm; file lưu trong thư mục chia sẻ giới hạn quyền (chỉ Director + người xử lý).
+Đề nghị: duyệt trích xuất Enrollment + Completion; hỗ trợ xin Finance duyệt số Revenue tổng hợp.

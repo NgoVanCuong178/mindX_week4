@@ -1,0 +1,11 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+LMS (Denise) - Application log (trích đoạn)
+
+08:24:10 INFO  Deployment lms-api v2.14.0 started
+08:27:45 INFO  Deployment lms-api v2.14.0 completed
+08:30:02 ERROR DbConnectionException: Timeout while connecting to lms-db (connection string: ExamDb)
+08:30:05 ERROR Failed to save submission exam_id=FINAL-WEB102 user=student_web102_04
+08:31:17 ERROR Failed to save submission exam_id=FINAL-DATA101 user=student_data101_11
+08:33:40 ERROR Failed to save submission exam_id=FINAL-MOBILE201 user=student_mobile201_02
+08:35:00 WARN  Retry exhausted (3/3) for ExamDb connection
+08:52:12 ERROR DbConnectionException: Timeout while connecting to lms-db (connection string: ExamDb)

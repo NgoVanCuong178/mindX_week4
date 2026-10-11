@@ -1,0 +1,16 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Tái hiện lỗi (14:18) bằng tài khoản test student_test_web101:
+  Mở GET /classes/WEB101-HN-2024    -> 34 s
+  Nộp bài POST /assignments/submit  -> timeout sau 30 s
+  Mở lớp WEB102-HN-2024 (đối chứng) -> 2 s
+=> Tái hiện được, chỉ xảy ra với lớp WEB101-HN-2024.
+
+Xác định nguyên nhân khả dĩ (14:22): database / cache / code
+
+Database : 7 query > 10s trên bảng submissions (class_id='WEB101-HN-2024'), pool 49/50, CPU 85%  -> NGHI NGỜ CHÍNH
+Cache    : cache hit rate 94% (bình thường ~93-95%)                                         -> loại trừ
+Code     : lần deploy gần nhất cách đây 2 ngày, không có lỗi mới sau deploy                  -> loại trừ (chưa có bằng chứng)
+Phía người dùng : nhiều học viên, nhiều trình duyệt/mạng khác nhau cùng bị, lớp khác bình thường -> loại trừ
+
+Kết luận: nguyên nhân khả dĩ ở database (query bài nộp của lớp chạy chậm, chiếm gần hết connection pool).
+Không có vấn đề đã biết kèm workaround được ghi lại -> không tự xử lý được -> escalate Dev.

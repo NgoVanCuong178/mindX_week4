@@ -1,0 +1,11 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Kiểm tra chức năng hiện có của LMS (Denise) liên quan tới báo cáo tiến độ
+
+Báo cáo tiến độ theo lớp (điểm danh, bài tập, điểm):   CÓ  - xem trên web, xuất Excel/CSV thủ công
+Báo cáo tiến độ từng học viên dạng PDF:                  KHÔNG
+Gửi email tự động cho phụ huynh:                         KHÔNG (LMS không lưu email phụ huynh)
+Lập lịch gửi báo cáo hàng tuần:                          KHÔNG
+
+Kết luận: yêu cầu nằm ngoài scope hiện tại của sản phẩm, cần Product đánh giá.
+Không phải lỗi -> không phải yêu cầu support, không có người dùng bị chặn công việc.
+Workaround hiện có: xuất báo cáo lớp ra Excel hàng tuần, dùng mail merge để gửi phụ huynh.

@@ -1,0 +1,15 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Vấn đề phát sinh trong quá trình xử lý
+
+14/10 10:30  Finance phản hồi: chưa duyệt được số doanh thu chi tiết theo khoá trước cuộc họp
+             (số liệu Q3 đang đối soát, dự kiến chốt sau 20/10).
+             Finance chỉ cung cấp được doanh thu tổng theo cơ sở cho Q1-Q2 (đã đối soát).
+14/10 11:00  LMS: dữ liệu hoàn thành của chương trình Art & Design tháng 01-02/2026 thiếu
+             (lớp chạy trên hệ thống cũ trước khi chuyển sang LMS).
+
+Option đề xuất gửi Director:
+  A. Bàn giao MVP đúng hạn, không có doanh thu; bổ sung doanh thu sau khi Finance chốt (sau 20/10)
+  B. MVP + doanh thu tổng theo cơ sở Q1-Q2 (đã đối soát), ghi chú Q3 chưa đối soát
+  C. Chờ đủ doanh thu chi tiết -> KHÔNG kịp deadline, không khuyến nghị
+  Tỷ lệ hoàn thành: tính từ 03/2026 cho Art & Design, ghi chú rõ trong báo cáo
+Khuyến nghị: B

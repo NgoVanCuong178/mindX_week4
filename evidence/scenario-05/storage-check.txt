@@ -1,0 +1,9 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Storage check - videoAssetId vid_js_adv_l3_7781
+
+File tồn tại:              CÓ (master.m3u8 + segments đầy đủ)
+Permission bucket:         đúng (giống các lesson khác)
+Signed URL của lesson:     tạo lúc publish bài, thời hạn 30 ngày -> HẾT HẠN lúc 19:38 hôm nay
+Lesson khác:               signed URL còn hạn
+
+Kết luận: BRANCH A - vấn đề nội dung (signed URL hết hạn). Support không có quyền tạo lại signed URL -> escalate Dev/Content Ops.

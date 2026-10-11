@@ -1,0 +1,7 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+API gateway log (trích đoạn) - lessonId L-JSADV-03
+
+19:41:07 GET /media/videos/vid_js_adv_l3_7781/master.m3u8  403  "Signature expired"  user=student_jsadv_03  device=Chrome 121/Windows  net=wifi  requestId=7f3a-91c2
+19:43:22 GET /media/videos/vid_js_adv_l3_7781/master.m3u8  403  "Signature expired"  user=student_jsadv_09  device=iOS Safari 17   net=4G    requestId=b21e-04d8
+19:47:55 GET /media/videos/vid_js_adv_l3_7781/master.m3u8  403  "Signature expired"  user=student_jsadv_11  device=Android Chrome net=wifi requestId=c9d0-6a17
+19:48:10 GET /media/videos/vid_js_adv_l2_7780/master.m3u8  200  user=student_jsadv_03  (Lesson 2 - bình thường)

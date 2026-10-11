@@ -1,0 +1,17 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Azure App Insights - LMS (Denise) - Server response time (avg)
+Khoảng thời gian: 13:30 - 14:30
+
+13:30   1.9 s
+13:45   2.1 s
+14:00   2.0 s   <- bắt đầu tăng
+14:05  12.4 s
+14:10  28.7 s
+14:15  35.2 s
+14:20  34.8 s
+14:25  36.1 s
+
+Failed requests (timeout) từ 14:00: tăng từ 0.2% lên 18%
+Top operations chậm nhất:
+  POST /api/assignments/submit      avg 41.0 s
+  GET  /api/classes/WEB101-HN-2024  avg 33.5 s

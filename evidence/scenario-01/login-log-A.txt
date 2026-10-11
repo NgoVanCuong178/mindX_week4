@@ -1,0 +1,10 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+LMS login log - tran.thi.b@example.com
+08:41  FAILED  invalid_password
+08:42  FAILED  invalid_password
+08:44  FAILED  invalid_password
+08:50  FAILED  invalid_password
+08:52  FAILED  invalid_password
+08:53  FAILED  invalid_password
+Last successful login: 3 tuần trước
+Other users with failed logins in same period: none abnormal

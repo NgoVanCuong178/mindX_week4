@@ -1,0 +1,25 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Tóm tắt báo cáo tuyển sinh 01/2026 - 09/2026 (bản bàn giao)
+
+Định nghĩa: học viên đăng ký mới = đã thanh toán đợt 1 trong tháng, không tính bảo lưu/chuyển lớp, đếm theo khoá.
+Không chứa PII. File chi tiết: bao-cao-tuyen-sinh-2026-01-09.csv (lọc theo Thang / Co_so / Chuong_trinh / Khoa_hoc).
+
+Tổng lượt đăng ký mới: 4967
+
+Theo cơ sở:
+  Nguyễn Chí Thanh   1716
+  Hà Đông            1605
+  Quận 10            1646
+
+Theo chương trình:
+  Coding             2047
+  Robotics           1401
+  Art & Design       1519
+
+Doanh thu tổng theo cơ sở (Q1-Q2/2026, Finance đã đối soát):
+  Nguyễn Chí Thanh   4,820,000,000 VND
+  Hà Đông            3,960,000,000 VND
+  Quận 10            4,350,000,000 VND
+  Q3/2026: Finance đang đối soát, bổ sung sau 20/10.
+
+Ghi chú: tỷ lệ hoàn thành Art & Design tính từ 03/2026 (01-02/2026 chạy trên hệ thống cũ, không có dữ liệu).

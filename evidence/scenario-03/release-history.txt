@@ -1,0 +1,8 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Lịch sử release - lms-api
+
+v2.14.0   hôm nay 08:27   Thay đổi cấu hình kết nối ExamDb + tính năng chấm điểm mới   <- release ngay trước sự cố
+v2.13.2   2 ngày trước    Sửa lỗi giao diện, chạy ổn định
+
+Nhận định: sự cố bắt đầu 08:30, ~3 phút sau release v2.14.0.
+Workaround nhanh khả dĩ: revert về v2.13.2 và release lại để service kết nối lại database.

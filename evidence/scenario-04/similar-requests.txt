@@ -1,0 +1,8 @@
+[GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
+Tìm yêu cầu tương tự trong Helpdesk (thẻ feature-request, từ khoá "báo cáo phụ huynh") - 3 tháng gần nhất
+
+- Cơ sở Hà Đông: đề xuất gửi bảng điểm cho phụ huynh qua email (đã đóng, chuyển Product)
+- Cơ sở Quận 10: đề xuất xuất báo cáo học viên PDF (đã đóng, chuyển Product)
+- Cơ sở Nguyễn Chí Thanh: ticket hiện tại
+
+Nhận định: 3 cơ sở cùng nhu cầu -> mẫu lặp lại, ghi vào phiếu chuyển Product để tăng trọng số đánh giá.
