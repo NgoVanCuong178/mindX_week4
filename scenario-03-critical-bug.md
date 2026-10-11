@@ -4,9 +4,9 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 | Ticket | Vai trò | Link |
 |---|---|---|
-| #00005 | **Ticket chính**: Exam submission DOWN (CXO Lê Ngọc A) | `<link>` |
-| #00006 | Liên quan: giáo viên lớp DATA101-SG | `<link>` |
-| #00007 | Liên quan: giáo viên lớp MOBILE201-HN | `<link>` |
+| #00005 | **Ticket chính**: Exam submission DOWN (CXO Lê Ngọc A) | `https://nv-cuong.odoo.com/odoo/helpdesk/1/tickets/5` |
+| #00006 | Liên quan: giáo viên lớp DATA101-SG | `https://nv-cuong.odoo.com/odoo/helpdesk/1/tickets/6` |
+| #00007 | Liên quan: giáo viên lớp MOBILE201-HN | `https://nv-cuong.odoo.com/odoo/helpdesk/1/tickets/7` |
 
 ## Giải thích phân loại
 
@@ -35,22 +35,29 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 ## Timeline
 
-<!-- Điền giờ thật theo chatter Odoo -->
+> Giờ dưới đây là **giờ theo tình huống giả định** (release 08:27, sự cố bắt đầu 08:30, nhận ticket 09:00). Giờ hệ thống hiển thị trong chatter Odoo là thời điểm thực hành.
 
 | Giờ | Việc | Mốc yêu cầu | Bước |
 |---|---|---|---|
-| `<hh:mm>` | Tạo ticket chính ★★★ | Nhận diện < 2 phút | 1 |
-| `<hh:mm>` | **Email 1 – Xác nhận khẩn cấp**; ghi chú cảnh báo Dev; ghi chú trả lời Manager; chuyển Đang thực hiện | < 5 phút | 2 |
-| `<hh:mm>` | Tạo và liên kết 2 ticket liên quan | | 2 |
-| `<hh:mm>` | Ghi chú thu thập thông tin + 5 file bằng chứng | < 10 phút | 3 |
-| `<hh:mm>` | Ghi chú Dev nhận việc, chọn revert; ghi chú email Manager (phương án) | < 15 phút | 4 |
-| `<hh:mm>` | **Email 2 – Cập nhật: nguyên nhân sơ bộ, phương án, việc học viên cần làm** | ≤ 15 phút sau email 1 | 4 |
-| `<hh:mm>` | Ghi chú Dev revert xong; **Email 3 – Đang kiểm tra, chưa báo đã sửa** | ≤ 15 phút sau email 2 | 5 |
-| `<hh:mm>` | Ghi chú tự kiểm tra + theo dõi; **Email 4 – Đã khôi phục**; Teams báo Manager; chuyển Tạm dừng | ≤ 15 phút sau email 3 | 5 |
-| `<hh:mm>` | Ghi chú CXO xác nhận; **Email 5 – Follow-up**; đóng ticket chính và ticket liên quan | | 6 |
-| `<hh:mm>` | Ghi chú post-mortem + bài Knowledge | | 7 |
+| 08:27 | Release lms-api v2.14.0 | | — |
+| 08:30 | Sự cố bắt đầu, nộp bài thi lỗi 100% | | — |
+| 09:00 | Nhận email CXO + Manager ping trên Teams | | 1 |
+| 09:01 | Tạo ticket chính ★★★ | Nhận diện < 2 phút (1 phút) | 1 |
+| 09:04 | **Email 1 – Xác nhận khẩn cấp**; ghi chú cảnh báo Dev; ghi chú trả lời Manager; chuyển Đang thực hiện | < 5 phút (4 phút) | 2 |
+| 09:06 – 09:08 | Tạo và liên kết 2 ticket liên quan #00006, #00007 | | 2 |
+| 09:10 | Ghi chú thu thập thông tin + 5 file bằng chứng | < 10 phút (10 phút) | 3 |
+| 09:14 | Ghi chú Dev nhận việc, chọn revert; ghi chú email Manager (phương án) | < 15 phút (14 phút) | 4 |
+| 09:18 | **Email 2 – Cập nhật: nguyên nhân sơ bộ, phương án, việc học viên cần làm** | ≤ 15 phút sau email 1 (14 phút) | 4 |
+| 09:22 | Ghi chú Manager duyệt gia hạn 60 phút | | 5 |
+| 09:25 | Ghi chú Dev revert xong | | 5 |
+| 09:30 | **Email 3 – Đang kiểm tra, chưa báo đã sửa** | ≤ 15 phút sau email 2 (12 phút) | 5 |
+| 09:45 | Ghi chú tự kiểm tra 3 lớp + theo dõi 20 phút; **Email 4 – Đã khôi phục**; Teams báo Manager; chuyển Tạm dừng | ≤ 15 phút sau email 3 (15 phút) | 5 |
+| 10:50 | Ghi chú CXO xác nhận 53/53 học viên đã nộp (hết thời gian gia hạn) | | 6 |
+| 10:55 | **Email 5 – Follow-up**; chuyển Đã xử lý | | 6 |
+| 11:00 | Gửi kết quả và đóng ticket liên quan #00006, #00007 | | 6 |
+| 11:30 | Ghi chú post-mortem + bài Knowledge | | 7 |
 
-Thời gian sự cố (08:30 → khôi phục): `<X> phút`. Từ lúc nhận ticket đến lúc khôi phục: `<Y> phút`.
+Thời gian sự cố (08:30 → khôi phục 09:25): **55 phút**. Từ lúc nhận ticket đến lúc xác nhận khôi phục (09:00 → 09:45): **45 phút**.
 
 ---
 

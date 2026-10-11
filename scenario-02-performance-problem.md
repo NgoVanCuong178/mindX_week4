@@ -4,7 +4,7 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 | Ticket | Nội dung | Link |
 |---|---|---|
-| #00004 | LMS Performance Issue - Class WEB101-HN-2024 (15 users) | `<link ticket>` |
+| #00004 | LMS Performance Issue - Class WEB101-HN-2024 (15 users) | `https://nv-cuong.odoo.com/odoo/helpdesk/1/tickets/4` |
 
 ## Giải thích phân loại
 
@@ -23,22 +23,26 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 ## Timeline
 
-<!-- Điền giờ thật theo chatter Odoo -->
+> Giờ dưới đây là **giờ theo tình huống giả định** (sự cố bắt đầu ~14:00, khớp với số liệu App Insights). Giờ hệ thống hiển thị trong chatter Odoo là thời điểm thực hành.
 
 | Giờ | Việc | Mốc yêu cầu | Bước |
 |---|---|---|---|
-| `<hh:mm>` | Tạo ticket, ghi chú phân loại | Ghi nhận < 10 phút | 1 |
-| `<hh:mm>` | **Email 1 – Xác nhận**, chuyển Đang thực hiện | < 15 phút từ khi nhận | 2 |
-| `<hh:mm>` | Ghi chú điều tra + 5 file bằng chứng | | 3 |
-| `<hh:mm>` | Ghi chú escalate Dev (tin nhắn Teams) | | 4 |
-| `<hh:mm>` | **Email 2 – Cập nhật: escalate + workaround** | ≤ 15 phút sau email 1 | 4 |
-| `<hh:mm>` | **Email 3 – Cập nhật: chưa có tiến triển** | ≤ 15 phút sau email 2 | 5 |
-| `<hh:mm>` | Ghi chú Dev đã sửa, ghi chú tự kiểm tra | | 5 |
-| `<hh:mm>` | **Email 4 – Đã khắc phục, nhờ xác nhận**, chuyển Tạm dừng | ≤ 15 phút sau email 3 | 5 |
-| `<hh:mm>` | Ghi chú CXO xác nhận + theo dõi tái phát; **Email 5 – Follow-up**, chuyển Đã xử lý | | 6 |
-| `<hh:mm>` | Ghi chú phân tích + bài Knowledge | | 7 |
+| 14:00 | Sự cố bắt đầu (lớp mở bài tập tuần) | | — |
+| 14:18 | Nhận email CXO | | 1 |
+| 14:22 | Tạo ticket, ghi chú phân loại | Ghi nhận < 10 phút (4 phút) | 1 |
+| 14:30 | **Email 1 – Xác nhận**, chuyển Đang thực hiện | < 15 phút từ khi nhận (12 phút) | 2 |
+| 14:38 | Ghi chú điều tra + 5 file bằng chứng | | 3 |
+| 14:41 | Ghi chú escalate Dev (tin nhắn Teams) | | 4 |
+| 14:44 | **Email 2 – Cập nhật: escalate + workaround** | ≤ 15 phút sau email 1 (14 phút) | 4 |
+| 14:58 | **Email 3 – Cập nhật: chưa có tiến triển** | ≤ 15 phút sau email 2 (14 phút) | 5 |
+| 15:05 | Ghi chú Dev đã sửa | | 5 |
+| 15:08 | Ghi chú tự kiểm tra sau khi sửa | | 5 |
+| 15:12 | **Email 4 – Đã khắc phục, nhờ xác nhận**, chuyển Tạm dừng | ≤ 15 phút sau email 3 (14 phút) | 5 |
+| 15:42 | Ghi chú CXO xác nhận + theo dõi tái phát 30 phút | | 6 |
+| 15:45 | **Email 5 – Follow-up**, chuyển Đã xử lý | | 6 |
+| 15:55 | Ghi chú phân tích + bài Knowledge | | 7 |
 
-Tổng thời gian từ lúc nhận đến lúc khắc phục: `<X> phút`.
+Tổng thời gian từ lúc nhận đến lúc khắc phục và tự kiểm tra: 14:18 → 15:08 = **50 phút**.
 
 ---
 

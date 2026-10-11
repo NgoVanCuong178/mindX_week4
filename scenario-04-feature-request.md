@@ -4,7 +4,7 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 | Ticket | Nội dung | Link |
 |---|---|---|
-| #00009 | Feature Request - Auto weekly PDF progress report to parents | `<link ticket>` |
+| #00009 | Feature Request - Auto weekly PDF progress report to parents | `https://nv-cuong.odoo.com/odoo/helpdesk/1/tickets/9` |
 
 ## Giải thích phân loại
 
@@ -23,18 +23,20 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 ## Timeline
 
-<!-- Điền giờ thật theo chatter Odoo -->
+> Giờ dưới đây là **giờ theo tình huống giả định** (Standard: phản hồi < 30 phút, cập nhật ≤ 24 giờ). Giờ hệ thống hiển thị trong chatter Odoo là thời điểm thực hành.
 
 | Giờ | Việc | Mốc yêu cầu | Bước |
 |---|---|---|---|
-| `<hh:mm>` | Tạo ticket, ghi chú phân loại | Ghi nhận < 15 phút | 1 |
-| `<hh:mm>` | **Email 1 – Xác nhận + làm rõ nhu cầu**, chuyển Đang thực hiện | < 30 phút | 2 |
-| `<hh:mm>` | Ghi chú kiểm tra chức năng hiện có, yêu cầu tương tự (2 file) | | 3 |
-| `<hh:mm>` | Ghi chú khách hàng bổ sung thông tin | | 3 |
-| `<hh:mm>` | Ghi chú chuyển Product (phiếu FR-112); **Email 2 – Đã chuyển Product + workaround**; lên lịch hoạt động theo dõi; chuyển Tạm dừng | ≤ 24h sau email 1 | 4 |
-| `<hh:mm>` | Ghi chú Product phản hồi | | 5 |
-| `<hh:mm>` | **Email 3 – Cập nhật trạng thái + follow-up**; chuyển Đã xử lý | ≤ 24h | 5–6 |
-| `<hh:mm>` | Ghi chú phân tích + bài Knowledge | | 7 |
+| 12/10 09:15 | Nhận email CXO | | 1 |
+| 12/10 09:25 | Tạo ticket, ghi chú phân loại | Ghi nhận < 15 phút (10 phút) | 1 |
+| 12/10 09:40 | **Email 1 – Xác nhận + làm rõ nhu cầu**, chuyển Đang thực hiện | < 30 phút (25 phút) | 2 |
+| 12/10 10:30 | Ghi chú kiểm tra chức năng hiện có, yêu cầu tương tự (2 file) | | 3 |
+| 12/10 14:00 | Ghi chú khách hàng bổ sung thông tin | | 3 |
+| 12/10 15:30 | Ghi chú chuyển Product (phiếu FR-112); **Email 2 – Đã chuyển Product + workaround**; lên lịch hoạt động theo dõi; chuyển Tạm dừng | ≤ 24h sau email 1 (~6 giờ) | 4 |
+| 13/10 10:00 | Ghi chú Product phản hồi | | 5 |
+| 13/10 10:30 | Ghi chú CXO phản hồi workaround | | 6 |
+| 13/10 11:00 | **Email 3 – Cập nhật trạng thái + follow-up**; chuyển Đã xử lý | ≤ 24h sau email 2 (~19,5 giờ) | 5–6 |
+| 13/10 11:30 | Ghi chú phân tích + bài Knowledge | | 7 |
 
 ---
 

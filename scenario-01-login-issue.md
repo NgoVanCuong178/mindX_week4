@@ -4,9 +4,9 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 | Ticket | Trường hợp | Link |
 |---|---|---|
-| #00001 | Deactivated → nhân sự **còn làm việc** → kích hoạt lại + reset mật khẩu | `<link ticket #00001>` |
-| #00002 | **Active** → hướng dẫn tự đặt lại mật khẩu | `<link ticket #00002>` |
-| #00003 | Deactivated → nhân sự **đã nghỉ việc** → không kích hoạt lại, giải thích và đóng | `<link ticket #00003>` |
+| #00001 | Deactivated → nhân sự **còn làm việc** → kích hoạt lại + reset mật khẩu | `https://nv-cuong.odoo.com/odoo/helpdesk/1/tickets/1` |
+| #00002 | **Active** → hướng dẫn tự đặt lại mật khẩu | `https://nv-cuong.odoo.com/odoo/helpdesk/1/tickets/2` |
+| #00003 | Deactivated → nhân sự **đã nghỉ việc** → không kích hoạt lại, giải thích và đóng | `https://nv-cuong.odoo.com/odoo/helpdesk/1/tickets/3` |
 
 ## Giải thích phân loại
 

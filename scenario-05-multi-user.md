@@ -4,9 +4,9 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 | Ticket | Vai trò | Link |
 |---|---|---|
-| #00010 | **Ticket chính**: Video playback issue - Lesson 3 (JS-ADV-HN-2412) - 12 users (CXO) | `<link>` |
-| #00011 | Liên quan: giáo viên lớp JS-ADV-HN-2412 | `<link>` |
-| #00012 | Liên quan: học viên (mobile) | `<link>` |
+| #00010 | **Ticket chính**: Video playback issue - Lesson 3 (JS-ADV-HN-2412) - 12 users (CXO) | `https://nv-cuong.odoo.com/odoo/helpdesk/1/tickets/10` |
+| #00011 | Liên quan: giáo viên lớp JS-ADV-HN-2412 | `https://nv-cuong.odoo.com/odoo/helpdesk/1/tickets/11` |
+| #00012 | Liên quan: học viên (mobile) | `https://nv-cuong.odoo.com/odoo/helpdesk/1/tickets/12` |
 
 Branch được xử lý trên Odoo: **Branch A – vấn đề nội dung (signed URL hết hạn)**. Bản soạn đầy đủ của Branch B và C: [scenario-05-branches-b-c.md](scenario-05-branches-b-c.md).
 

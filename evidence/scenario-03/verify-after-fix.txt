@@ -1,12 +1,12 @@
 [GIẢ ĐỊNH - MÔI TRƯỜNG TRAINING]
-Kiểm tra sau khi Dev revert về v2.13.2 (release xong 09:40)
+Kiểm tra sau khi Dev revert về v2.13.2 (release xong 09:25)
 
 Tự test nộp bài thi bằng tài khoản test:
   WEB102-HN       nộp thành công (1.8 s)
   DATA101-SG      nộp thành công (2.0 s)
   MOBILE201-HN    nộp thành công (1.9 s)
 
-Theo dõi 09:40 - 10:00:
+Theo dõi 09:25 - 09:45:
   Failed requests POST /api/exams/submit: 0%
   Exceptions / 5 phút: 1 - 3 (bình thường)
   Dependency "lms-db": thành công 100%

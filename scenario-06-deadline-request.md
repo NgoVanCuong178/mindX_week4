@@ -4,7 +4,7 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 | Ticket | Nội dung | Link |
 |---|---|---|
-| #00013 | Fixed Deadline - Enrollment report for Director (Due 09:00 15/10) | `<link ticket>` |
+| #00013 | Fixed Deadline - Enrollment report for Director (Due 09:00 15/10) | `https://nv-cuong.odoo.com/odoo/helpdesk/1/tickets/13` |
 
 ## Giải thích phân loại
 
