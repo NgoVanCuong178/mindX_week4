@@ -14,6 +14,8 @@ Branch được xử lý trên Odoo: **Branch A – vấn đề nội dung (sign
 
 **Class of Service: Priority** (ưu tiên ★★ Cao; thẻ `lms`, `video`, `cdn`, `priority`, `js-adv`, `lesson-3`).
 
+> Quy ước ưu tiên dùng trong bài: Standard ★ · Priority ★★ · Expedite ★★★ · Fixed Deadline ★★ (theo tác động kinh doanh).
+
 - **12 học viên** bị ảnh hưởng (5–25), 3 ticket cùng hiện tượng trong 20 phút → sự cố **multi-user**, không phải lỗi cá nhân.
 - **Chặn việc học:** video bài 3 không phát được.
 - Không phải Expedite (< 25 người, chỉ 1 bài); không phải Standard (nhiều người cùng bị).
@@ -64,7 +66,10 @@ Tạo ticket chính (12 users, bắt đầu ~19:40, thẻ đủ 6), ghi chú tri
 <!-- ẢNH: form ticket chính + ghi chú [Triage] -->
 ![Bước 1: Triage](images/scenario-05/step1.png)
 
-Gom 2 ticket liên quan về ticket chính.
+Gom 2 ticket liên quan về ticket chính: thêm người báo vào theo dõi ticket chính (nhận mọi cập nhật), ghi chú [Liên kết] có link tới ticket chính, cùng thẻ `lesson-3`.
+
+<!-- ẢNH: ticket chính #00010, mở danh sách người theo dõi (biểu tượng 👤 trong chatter), thấy Giáo viên Đỗ Văn F và Học viên Vũ Thị G -->
+![Người báo được thêm vào theo dõi ticket chính #00010](images/scenario-05/followers.png)
 
 <!-- ẢNH: ticket liên quan #00011 và #00012 lúc tạo: thẻ js-adv + lesson-3, ghi chú [Liên kết] + email xác nhận -->
 ![Ticket liên quan #00011 (giáo viên)](images/scenario-05/related-00011.png)
@@ -101,15 +106,15 @@ Content Ops tạo lại signed URL. Tự test web + mobile, verify với 2 user 
 
 ## Bước 6: Theo dõi và đóng
 
-CXO xác nhận 12/12 học viên xem được. Email 4 follow-up, chuyển ticket chính sang **Đã xử lý**; gửi kết quả và đóng 2 ticket liên quan.
+CXO xác nhận 12/12 học viên xem được. Email 4 follow-up, chuyển ticket chính sang **Đã xử lý**; gửi kết quả cho 2 người báo, đóng ticket liên quan sau khi họ xác nhận.
 
 <!-- ẢNH: ghi chú [Theo dõi] + email 4 + dòng "→ Đã xử lý" -->
 
 ![Bước 6: Theo dõi](images/scenario-05/step6.png)
 
-Gửi kết quả và đóng 2 ticket liên quan (Đang thực hiện → Đã xử lý).
+Gửi kết quả cho từng người báo và chuyển **Tạm dừng**; chỉ đóng (**Đã xử lý**) sau khi người báo xác nhận.
 
-<!-- ẢNH: ticket liên quan lúc đóng: email kết quả + dòng "→ Đã xử lý" -->
+<!-- ẢNH: ticket liên quan: email kết quả + "→ Tạm dừng" + ghi chú [Theo dõi] người báo xác nhận + email đóng + "→ Đã xử lý" -->
 ![Đóng ticket liên quan #00011](images/scenario-05/related-closed-00011.png)
 
 ![Đóng ticket liên quan #00012](images/scenario-05/related-closed-00012.png)
@@ -149,3 +154,10 @@ Bằng chứng giả lập: [`evidence/scenario-05/`](evidence/scenario-05/)
 - Escalate kèm ID cụ thể (lessonId, videoAssetId, requestId, user mẫu) giúp Content Ops sửa ngay.
 - Verify với user mẫu trước khi báo cả lớp; đóng ticket khi người dùng xác nhận.
 - Có thể tự động hoá: cảnh báo signed URL sắp hết hạn, tự gia hạn khi bài còn đang được dùng.
+
+## Điều chỉnh sau review
+
+- Thêm quan hệ thật trên Odoo cho ticket liên quan: người báo theo dõi ticket chính, ghi chú có link tới ticket chính.
+- Email xác nhận #00011, #00012 nêu mốc cập nhật tiếp theo (30 phút); sửa xưng hô "thầy" ở #00011.
+- #00011, #00012: email kết quả ngắn (nguyên nhân dễ hiểu → đã xử lý → nhờ kiểm tra), chờ xác nhận rồi mới đóng.
+- Rút gọn 4 email cho CXO, bỏ "Priority"/"Incognito" (dùng "cửa sổ ẩn danh"); thay hết placeholder.

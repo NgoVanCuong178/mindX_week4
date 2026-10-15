@@ -10,6 +10,8 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 **Class of Service: Fixed Deadline** (ưu tiên ★★ Cao; thẻ `fixed-deadline`, `reporting`, `enrollment`, `director`).
 
+> Quy ước ưu tiên dùng trong bài: Standard ★ · Priority ★★ · Expedite ★★★ · Fixed Deadline ★★ (theo tác động kinh doanh).
+
 - **Ưu tiên theo thời gian, không theo số người:** hạn cứng 09:00 15/10 cho cuộc họp của Director; trễ hạn thì báo cáo mất giá trị.
 - **Tác động kinh doanh cao:** báo cáo dùng để trình bày trong cuộc họp quan trọng.
 - **Không phải sự cố:** không ai bị chặn công việc, nên không phải Priority/Expedite.
@@ -153,3 +155,9 @@ Bằng chứng giả lập và file bàn giao: [`evidence/scenario-06/`](evidenc
 - Gặp vấn đề thì báo sớm kèm option và khuyến nghị, để người yêu cầu quyết định khi vẫn còn thời gian.
 - Dữ liệu nhạy cảm: chỉ trích xuất số tổng hợp và xin duyệt trước khi làm.
 - Có thể tự động hoá: dashboard tuyển sinh tự phục vụ có bộ lọc cơ sở/chương trình/thời gian, kèm từ điển định nghĩa metric.
+
+## Điều chỉnh sau review
+
+- Email xác nhận tách rõ **hạn Director cần trả lời** (16:00) và **mốc team gửi đề xuất phạm vi** (14:00).
+- Nhóm câu hỏi chốt scope thành phần bắt buộc / bổ sung / định dạng; rút gọn các email chốt scope, cập nhật và bàn giao.
+- Email kết thúc chỉ đóng ticket sau khi Director đã xác nhận báo cáo đủ dùng.

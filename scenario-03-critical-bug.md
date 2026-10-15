@@ -12,6 +12,8 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 **Class of Service: Expedite** (ưu tiên ★★★ Khẩn cấp; thẻ `expedite`, `lms`, `exam`, `incident`, `inc-exam-submit`).
 
+> Quy ước ưu tiên dùng trong bài: Standard ★ · Priority ★★ · Expedite ★★★ · Fixed Deadline ★★ (theo tác động kinh doanh).
+
 - **53+ học viên** ở nhiều lớp, nhiều cơ sở bị ảnh hưởng, vượt mốc 25 người dùng.
 - **Chức năng kinh doanh quan trọng:** nộp bài thi cuối kỳ.
 - **Hệ thống hoàn toàn lỗi:** tỷ lệ lỗi 100%, không có cách nộp bài trên LMS.
@@ -22,7 +24,7 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 - **Trong 5 phút đầu, làm song song:** xác nhận với CXO, cảnh báo Dev/DevOps/Senior qua Teams, trả lời Manager. Không đợi điều tra xong mới cảnh báo.
 - **Vai trò:** Dev/DevOps xử lý kỹ thuật; tôi là đầu mối giao tiếp và theo dõi ticket.
 - **Nhịp cập nhật:** mỗi 15 phút cho CXO và Manager, kể cả khi chưa có tiến triển.
-- **Ticket liên quan:** các ticket cùng sự cố được gắn thẻ `inc-exam-submit` và trỏ về ticket chính, mọi cập nhật tập trung ở ticket chính.
+- **Ticket liên quan:** liên kết trên Odoo bằng 3 cách: (1) 2 giáo viên báo lỗi được thêm vào **người theo dõi** của ticket chính, nên nhận mọi email cập nhật từ ticket chính; (2) ghi chú [Liên kết] ở ticket liên quan có **link bấm được** tới ticket chính; (3) cùng thẻ `inc-exam-submit` để lọc. Mỗi ticket liên quan vẫn được gửi kết quả riêng và chỉ đóng sau khi người báo xác nhận.
 - **Workaround:** revert release v2.14.0 (ngay trước sự cố) về v2.13.2 để service kết nối lại database. Trong lúc chờ, học viên lưu bài trên máy, và Manager được đề xuất gia hạn thời gian nộp bài.
 
 ## Giao tiếp theo đối tượng
@@ -75,7 +77,10 @@ Song song: Email 1 xác nhận khẩn cấp cho CXO, cảnh báo Dev/DevOps/Seni
 <!-- ẢNH: email 1 + ghi chú [Cảnh báo Dev] + ghi chú [Trả lời Manager] + dòng "Mới → Đang thực hiện" -->
 ![Bước 2: Phản ứng khẩn cấp](images/scenario-03/step2.png)
 
-Liên kết 2 ticket liên quan từ giáo viên về ticket chính.
+Liên kết 2 ticket liên quan từ giáo viên về ticket chính: thêm người báo vào theo dõi ticket chính, ghi chú [Liên kết] có link tới ticket chính.
+
+<!-- ẢNH: ticket chính #00005, mở danh sách người theo dõi (biểu tượng 👤 trong chatter), thấy Giáo viên Phạm Văn D và Giáo viên Hoàng Thị E -->
+![Người báo được thêm vào theo dõi ticket chính #00005](images/scenario-03/followers.png)
 
 <!-- ẢNH: ticket liên quan #00006 và #00007 lúc tạo: ★★★, thẻ inc-exam-submit, ghi chú [Liên kết] + email xác nhận -->
 ![Ticket liên quan #00006 (DATA101-SG)](images/scenario-03/related-00006.png)
@@ -110,15 +115,15 @@ Tự test nộp bài ở 3 lớp và theo dõi 20 phút. Email 4 báo đã khôi
 
 ## Bước 6: Theo dõi
 
-CXO xác nhận, Email 5 follow-up, chuyển ticket chính sang **Đã xử lý**; gửi kết quả và đóng 2 ticket liên quan.
+CXO xác nhận, Email 5 follow-up, chuyển ticket chính sang **Đã xử lý**; gửi kết quả cho 2 người báo, đóng ticket liên quan sau khi họ xác nhận.
 
 <!-- ẢNH: ghi chú [Theo dõi] + email 5 + dòng "Tạm dừng → Đã xử lý" -->
 
 ![Bước 6: Theo dõi](images/scenario-03/step6.png)
 
-Gửi kết quả và đóng 2 ticket liên quan (Đang thực hiện → Đã xử lý).
+Gửi kết quả cho từng người báo và chuyển **Tạm dừng**; chỉ đóng (**Đã xử lý**) sau khi người báo xác nhận.
 
-<!-- ẢNH: ticket liên quan lúc đóng: email kết quả + dòng "→ Đã xử lý" -->
+<!-- ẢNH: ticket liên quan: email kết quả + "→ Tạm dừng" + ghi chú [Theo dõi] người báo xác nhận + email đóng + "→ Đã xử lý" -->
 ![Đóng ticket liên quan #00006](images/scenario-03/related-closed-00006.png)
 
 ![Đóng ticket liên quan #00007](images/scenario-03/related-closed-00007.png)
@@ -161,3 +166,10 @@ Bằng chứng giả lập (đính kèm trong ghi chú thu thập thông tin): [
 - Release ngay trước sự cố là manh mối đầu tiên; revert là workaround nhanh nhất trong khi tìm nguyên nhân gốc.
 - Không báo "đã sửa" ngay sau khi Dev deploy: tự test nhiều lớp và theo dõi một khoảng thời gian rồi mới thông báo.
 - Có thể tự động hoá: cảnh báo khi tỷ lệ lỗi nộp bài > 5%, smoke test nộp bài tự động sau mỗi release, không release vào khung giờ thi.
+
+## Điều chỉnh sau review
+
+- Thêm quan hệ thật trên Odoo cho ticket liên quan: người báo theo dõi ticket chính, ghi chú có link tới ticket chính.
+- Email xác nhận #00006, #00007 nêu mốc cập nhật tiếp theo (15 phút).
+- #00006, #00007: gửi email kết quả riêng, chờ giáo viên xác nhận rồi mới đóng; sửa xưng hô "cô" ở #00007.
+- Rút gọn 5 email cho CXO; thay hết placeholder (`#[CHÍNH]`, `[giờ]`, `[X]`).

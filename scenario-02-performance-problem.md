@@ -10,6 +10,8 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 **Class of Service: Priority** (ưu tiên ★★ Cao; thẻ `performance`, `lms`, `priority`, `web101`).
 
+> Quy ước ưu tiên dùng trong bài: Standard ★ · Priority ★★ · Expedite ★★★ · Fixed Deadline ★★ (theo tác động kinh doanh).
+
 - **15 học viên** bị ảnh hưởng, nằm trong khoảng 5–25 người dùng.
 - **Chặn công việc:** trang mất hơn 1 phút để tải, một số học viên không nộp được bài tập.
 - **Đang diễn ra:** lớp học đang tiến hành, nên cần phản hồi trong 15 phút và cập nhật mỗi 15 phút.
@@ -130,3 +132,9 @@ Bằng chứng giả lập (đính kèm trong ghi chú điều tra): [`evidence/
 - Không để người dùng chờ trong im lặng: cập nhật theo nhịp đã hẹn, kể cả khi chưa có kết quả.
 - Chỉ báo đã khắc phục sau khi tự kiểm tra số liệu và có xác nhận từ phía người dùng.
 - Có thể tự động hoá: cảnh báo khi response time của một lớp vượt ngưỡng, và cảnh báo sớm khi connection pool vượt 80%.
+
+## Điều chỉnh sau review
+
+- Rút gọn 5 email cho CXO theo 3 ý: trạng thái → việc cần làm → lần cập nhật tiếp theo.
+- Bỏ thuật ngữ nội bộ khỏi email ("Priority", "dev team"); số liệu kỹ thuật chỉ giữ trong ghi chú nội bộ.
+- Rà soát và thay hết placeholder (`#[SỐ]`, `[X] phút`).

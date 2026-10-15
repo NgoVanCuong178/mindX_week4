@@ -8,7 +8,9 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 ## Giải thích phân loại
 
-**Loại yêu cầu: Feedback sản phẩm (Feature Request), không phải yêu cầu support.** Class of Service: **Standard** (ưu tiên 0 sao; thẻ `feature-request`, `lms`, `report`, `product`).
+**Loại yêu cầu: Feedback sản phẩm (Feature Request), không phải yêu cầu support.** Class of Service: **Standard** (ưu tiên ★ Trung bình; thẻ `feature-request`, `lms`, `report`, `product`).
+
+> Quy ước ưu tiên dùng trong bài: Standard ★ · Priority ★★ · Expedite ★★★ · Fixed Deadline ★★ (theo tác động kinh doanh).
 
 - **Không phải lỗi:** LMS vẫn hoạt động đúng thiết kế, chỉ chưa có chức năng này.
 - **Không ai bị chặn công việc:** CXO vẫn làm thủ công được, yêu cầu nhằm tiết kiệm thời gian.
@@ -42,7 +44,7 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 ## Bước 1: Tiếp nhận và phân loại
 
-Tạo ticket (ưu tiên 0 sao, thẻ feature-request), ghi chú: đây là feedback sản phẩm, đơn vị xử lý chính là Product.
+Tạo ticket (ưu tiên ★, thẻ feature-request), ghi chú: đây là feedback sản phẩm, đơn vị xử lý chính là Product.
 
 <!-- ẢNH: form ticket + ghi chú [Tiếp nhận] -->
 ![Bước 1: Tiếp nhận](images/scenario-04/step1.png)
@@ -112,3 +114,9 @@ Bằng chứng giả lập (đính kèm trong ghi chú): [`evidence/scenario-04/
 - Gộp các yêu cầu tương tự từ nhiều cơ sở để Product thấy mức độ nhu cầu thật.
 - Ghi chú cho Product cả rủi ro dữ liệu cá nhân (email phụ huynh), không chỉ mô tả tính năng.
 - Có thể tự động hoá: mẫu trả lời soạn sẵn cho yêu cầu tính năng, báo cáo định kỳ số yêu cầu theo chủ đề gửi Product.
+
+## Điều chỉnh sau review
+
+- Đổi ưu tiên #00009 từ 0 sao thành ★ cho đúng quy ước Standard.
+- Rút gọn 3 email; nhóm câu hỏi làm rõ nhu cầu; dùng "đội phụ trách sản phẩm" thay cho "Product", giải thích "mail merge" là gửi thư hàng loạt theo danh sách.
+- Thay hết placeholder (`#[SỐ]`).

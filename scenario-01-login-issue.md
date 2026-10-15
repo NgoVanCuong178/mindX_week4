@@ -10,7 +10,9 @@ Odoo Helpdesk: https://nv-cuong.odoo.com (đội **MindX Tech Support**). Tình 
 
 ## Giải thích phân loại
 
-**Class of Service: Standard** (ưu tiên 0 sao; thẻ `lms`, `login`, `teacher`). Chỉ 1 người dùng bị ảnh hưởng (< 5), lỗi ở cấp tài khoản cá nhân, log đăng nhập không có lỗi hàng loạt nên không phải sự cố hệ thống. Giáo viên cần tài liệu cho buổi học hôm nay nên được phản hồi sớm trong mốc 30 phút, nhưng mức phân loại vẫn dựa trên **mức ảnh hưởng**.
+**Class of Service: Standard** (ưu tiên ★ Trung bình; thẻ `lms`, `login`, `teacher`). Chỉ 1 người dùng bị ảnh hưởng (< 5), lỗi ở cấp tài khoản cá nhân, log đăng nhập không có lỗi hàng loạt nên không phải sự cố hệ thống. Giáo viên cần tài liệu cho buổi học hôm nay nên được phản hồi sớm trong mốc 30 phút, nhưng mức phân loại vẫn dựa trên **mức ảnh hưởng**.
+
+> Quy ước ưu tiên dùng trong bài: Standard ★ · Priority ★★ · Expedite ★★★ · Fixed Deadline ★★ (theo tác động kinh doanh).
 
 ---
 
@@ -157,3 +159,9 @@ Bằng chứng giả lập (đính kèm trong ghi chú chẩn đoán của từn
 - Email cho người dùng không dùng thuật ngữ và không tiết lộ thông tin nhân sự.
 - Email xác nhận phải gửi ngay trong 30 phút, kể cả khi chưa có kết quả kiểm tra.
 - Có thể tự động hoá: gợi ý "Quên mật khẩu" sau nhiều lần nhập sai, đối chiếu tài khoản LMS với dữ liệu nhân sự, thông báo trước khi thu hồi tài khoản.
+
+## Điều chỉnh sau review
+
+- Đổi ưu tiên #00001–#00003 từ 0 sao thành ★ cho đúng quy ước Standard.
+- Sửa email xác nhận #00003: xưng hô "thầy" thống nhất, thêm mốc cập nhật tiếp theo.
+- Thêm email đóng ticket #00003 sau khi giáo viên xác nhận đã hiểu.
